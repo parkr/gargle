@@ -51,7 +51,7 @@ class Parser:
                 html = self.__get_html(num, url)
                 if html is not None:
                     soup = BeautifulSoup(html.encode('utf-8', 'ignore'), 'lxml')
-                    page = Page(title=soup.title.string, html=soup.prettify())
+                    page = Page(title=soup.title.string, num=num, html=soup.prettify())
                     self.pages_with_ids[page.ID] = page
                     for link in soup.find_all('a'):
                         page.a.append(link)
