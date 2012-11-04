@@ -60,8 +60,7 @@ class Parser:
             self.pages_with_ids[page.ID] = page
             
             for link in soup.find_all('a'):
-                
-                link.get('href')
+                page.a.append(link)
             
             self.pages.append(page)
         print len(self.pages)
