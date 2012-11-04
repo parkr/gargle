@@ -12,4 +12,8 @@ class PageRankr:
     def calc_page_ranks(self):
         raise RuntimeError('PageRankr#calc_page_ranks has not been implemented yet.')
         # re-create self.__m
+        pbar = ProgressBar(widgets=['Calculating PageRanks: ', SimpleProgress()], maxval=len(self.pages)).start()
+        for (num, page) in enumerate(self.pages):
+            pbar.update(num)
+        pbar.finish()
         
