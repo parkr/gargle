@@ -2,8 +2,9 @@ import hashlib, StringIO, codecs
 from xml.dom.minidom import Document
 
 class Page:
-    def __init__(self, title, html):
+    def __init__(self, title, num, html):
         self.ID = self.id_hash(html)
+        self.num = num
         self.title = title
         self.urls = []
         self.anchor_texts = [] # also contains alt text of <img>'s within <a></a>
