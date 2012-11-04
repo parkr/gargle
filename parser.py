@@ -29,6 +29,10 @@ class Parser:
             unicode_html = unicode(html, 'utf-8')
         except UnicodeDecodeError:
             unicode_html = unicode(html, 'windows-1252')
+            if encoding:
+                unicode_html = unicode(html, encoding)
+            else:
+                unicode_html = unicode(html, 'windows-1252')
         return unicode_html
     
     def parse_urls(self, filename='./test/test3.txt'):
