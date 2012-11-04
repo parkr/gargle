@@ -33,11 +33,18 @@ class Parser:
             self.urls.append( (els[0], els[1]) )
     
     def process_pages(self):
+        skipped = []
         for (num, url) in self.urls:
+            if not (num and url):
+                skipped.append(num)
+                continue
+            
             print "Processing URL (%s): %s" % (num, url)
             html = self.__get_html(num, url)
             if html is None:
+                skipped.append(num)
                 continue
+            
             soup = BeautifulSoup(html.encode('utf-8', 'ignore'), "lxml")
             page = Page(title=soup.title.string, html=soup.prettify(), soup=soup)
             self.pages_with_ids[page.ID] = page
@@ -49,6 +56,7 @@ class Parser:
             self.pages.append(page)
         print len(self.pages)
         return None
+        print "Skipped page(s) %s because of an error." % (', '.join(skipped))
         # write metadata.xml
         doc = Document()
         doc.appendChild(doc.createElement("date").appendChild(doc.createTextNode(datetime.now().isoformat())))
