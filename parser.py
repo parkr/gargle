@@ -2,7 +2,8 @@ from bs4 import BeautifulSoup
 from xml.dom.minidom import Document
 from datetime import datetime
 from page import Page
-import urllib2
+from progressbar import *
+import urllib2, time, sys
 
 class Parser:
     
@@ -42,26 +43,24 @@ class Parser:
     
     def process_pages(self):
         skipped = []
+        pbar = ProgressBar(widgets=['Processing pages: ', SimpleProgress()], maxval=len(self.urls)).start()
+        
         for (num, url) in self.urls:
-            if not (num and url):
+            pbar.update(int(num))
+            if (num and url):
+                html = self.__get_html(num, url)
+                if html is not None:
+                    soup = BeautifulSoup(html.encode('utf-8', 'ignore'), 'lxml')
+                    page = Page(title=soup.title.string, html=soup.prettify())
+                    self.pages_with_ids[page.ID] = page
+                    for link in soup.find_all('a'):
+                        page.a.append(link)
+                    self.pages.append(page)
+                else:
+                    skipped.append(num)
+            else:
                 skipped.append(num)
-                continue
-            
-            print "Processing URL (%s): %s" % (num, url)
-            html = self.__get_html(num, url)
-            if html is None:
-                skipped.append(num)
-                continue
-            
-            soup = BeautifulSoup(html.encode('utf-8', 'ignore'), "lxml")
-            page = Page(title=soup.title.string, html=soup.prettify())
-            self.pages_with_ids[page.ID] = page
-            
-            for link in soup.find_all('a'):
-                page.a.append(link)
-            
-            self.pages.append(page)
-        print len(self.pages)
+        pbar.finish()
         print "Skipped page(s) %s because of an error." % (', '.join(skipped))
     
     def write_metadata(self):
