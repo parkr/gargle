@@ -1,0 +1,2402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<!--
+		This document provides the basis of a semantically structured web page 
+		authored in XHTML 1.0 Transitional using established Cornell University
+		naming conventions.    
+	-->
+    	
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cornell University Library Selectors | Cornell University Library</title>
+<link rel="shortcut icon" href="/sites/all/themes/webvision/favicon.ico" type="image/x-icon" />
+<!--
+		All layout and formatting should be controlled through Cascading Stylesheets (CSS).
+		The following link tag should appear in the head of every page in the website. see
+		styles/screen.css.
+	-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://embanner.univcomm.cornell.edu/OWC-emergency-banner.js"
+type="text/javascript"> </script>
+<link rel="shortcut icon" href="/sites/all/themes/webvision/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/webvision/styles/default.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/webvision/styles/secondary_page.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/webvision/styles/swoosh.css" />
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/webvision/styles/secondary_page-ie6.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/webvision/styles/swoosh-ie6.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/webvision/styles/secondary_page-ie7.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/webvision/includes/thickbox-code/thickbox.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/webvision/styles/overrides.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/webvision/styles/admin_hacks.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/sites/all/themes/webvision/styles/aboutus.css" />
+
+<link type="text/css" rel="stylesheet" media="all" href="/sites/default/files/css/css_d2e46df82a55a636de8cb0e6a2856c88.css" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/default/files/css/css_171e8e81b11fc800db73ad0e06ab537b.css" />
+<script type="text/javascript" src="/misc/jquery.js?X"></script>
+<script type="text/javascript" src="/misc/drupal.js?X"></script>
+<script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?X"></script>
+<script type="text/javascript" src="/sites/all/modules/mollom/mollom.js?X"></script>
+<script type="text/javascript" src="/sites/all/modules/panels/js/panels.js?X"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "cul_hours": { "module_path": "http://www.library.cornell.edu/sites/all/modules/cul_hours", "libs": [ { "title": "Africana Library ", "lat": "42.457407", "long": "-76.482321", "open": 1, "today": "Open 9:00 am - 11:00 pm" }, { "title": "Engineering Library", "lat": "42.444908", "long": "-76.484402", "open": true, "today": "24/7 Study Space and Computing Only" }, { "title": "Fine Arts Library", "lat": "42.450891", "long": "-76.484113", "open": 1, "today": "Open 8:00 am - 11:00 pm" }, { "title": "Geneva Experiment Station Library", "lat": "42.877450", "long": "-77.007283", "open": 1, "today": "Open 8:00 am - 5:00 pm" }, { "title": "Hotel Library", "lat": "42.445672", "long": "-76.482198", "open": 1, "today": "Open 8:00 am - 11:30 pm" }, { "title": "ILR Library", "lat": "42.447342", "long": "-76.481087", "open": 1, "today": "Open 8:00 am - 11:00 pm" }, { "title": "Kroch Library, Division of Asia Collections", "lat": "0.000000", "long": "0.000000", "open": 1, "today": "Open 8:00 am - 2:00 am" }, { "title": "Kroch Library, Division of Rare \x26 Manuscript Collections", "lat": "42.448027", "long": "-76.483558", "open": 1, "today": "Open 10:00 am - 5:00 pm" }, { "title": "Law Library", "lat": "42.443777", "long": "-76.485542", "open": 1, "today": "Open 8:00 am - 8:00 pm" }, { "title": "Library Annex", "lat": "42.442481", "long": "-76.458144", "open": 1, "today": "Open 8:00 am - 6:00 pm" }, { "title": "Management Library", "lat": "42.445929", "long": "-76.483013", "open": 1, "today": "Open 8:30 am - 8:30 pm" }, { "title": "Mann Library", "lat": "42.448779", "long": "-76.476324", "open": 1, "today": "Open 8:00 am - Midnight" }, { "title": "Mathematics Library", "lat": "42.448264", "long": "-76.480250", "open": 1, "today": "Open 8:00 am - 11:00 pm" }, { "title": "Music Library", "lat": "42.450204", "long": "-76.483340", "open": 1, "today": "Open 9:00 am - 10:00 pm" }, { "title": "Olin Library", "lat": "42.447793", "long": "-76.484606", "open": 1, "today": "Open 8:00 am - 2:00 am" }, { "title": "Ornithology Library", "lat": "42.479662", "long": "-76.450971", "open": null, "today": "Open 10:00 am - 4:00 pm" }, { "title": "Physical Sciences Library (Edna McConnell Clark Library)", "lat": "42.449634", "long": "-76.481070", "open": true, "today": "24/7 Quiet Study Space Only" }, { "title": "Uris Library", "lat": "42.447738", "long": "-76.485473", "open": 1, "today": "\x3cstrong\x3eOpen 24 hours\x3c/strong\x3e" }, { "title": "Veterinary Library", "lat": "42.447101", "long": "-76.465970", "open": 1, "today": "Open 7:30 am - 11:00 pm" } ], "name_map": { "Africana Library ": "Africana", "Ornithology Library": "Ornithology", "Physical Sciences Library (Edna McConnell Clark Library)": "Clark Hall", "Kroch Library, Division of Rare and Manuscript Collections": "Olin Library", "Kroch Library, Division of Asia Collections": "Olin Library", "Geneva Experiment Station Library": "Jordan Hall", "ILR Library": "Ives Hall", "Engineering Library": "Carpenter Hall", "Fine Arts Library": "Rand Hall", "Hotel Library": "Statler Hall", "Law Library": "Myron Taylor Hall", "Management Library": "Sage Hall", "Mathematics Library": "Malott Hall", "Music Library": "Lincoln Hall", "Veterinary Library": "Vet", "Kroch Library, Division of Rare \x26 Manuscript Collections": "Kroch Library, Division of Rare \x26 Manuscript Collections", "Library Annex": "Library Annex", "Mann Library": "Mann Library", "Olin Library": "Olin Library", "Uris Library": "Uris Library" } }, "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+<script type="text/javascript"> 
+<!--//--><![CDATA[//><!--
+var randomBannerImage = Math.floor(Math.random()*31) + 1;
+var randomStaffImage = Math.floor(Math.random()*9) + 1;
+var randomInsideImage = Math.floor(Math.random()*3) + 1;
+jQuery.extend(Drupal.settings, { "themePath": "sites/all/themes/webvision", "randomBannerImage":  randomBannerImage + ".jpg" });
+//--><!]]> 
+</script> 
+<script type="text/javascript" src="/sites/all/themes/webvision/includes/thickbox-code/thickbox-compressed.js"></script>
+<script type="text/javascript" src="/sites/all/themes/webvision/includes/secondary_page.js"></script>
+<script type="text/javascript" src="/sites/all/themes/webvision/includes/search.js"></script>
+
+</head>
+
+<body class="inactive">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+<hr class="hidden" />
+<!-- The following div contains the Cornell University logo with unit signature -->
+<div id="cu-identity">
+	<div id="cu-logo"><a id="insignia-link" href="http://www.cornell.edu/"><img src="/sites/all/themes/webvision/images/unit_signature_unstyled.gif" border="0" alt="Cornell University" width="283" height="75" /></a>
+		<div id="unit-signature-links"><a id="cornell-link" href="http://www.cornell.edu/">Cornell University</a> <a id="unit-link" href="http://www.library.cornell.edu">Library</a></div>
+	</div>
+	<!-- 	The search-form div contains a form that allows the user to search 	either the unit website or all of cornell.edu directly from the banner. -->
+	<div id="search-form">
+    <form action="/search/cul_gsa" enctype="application/x-www-form-urlencoded" method="post">
+      <div id="search-input">
+        <label for="search-form-query">SEARCH:</label>
+        <input id="search-form-query" name="qp" size="20" type="text" />
+        <input id="search-form-submit" name="submit" type="submit" value="go" />
+      </div>
+      <div id="search-filters">
+        <input id="search-filters1" checked="checked" name="sitesearch" type="radio" value="library" />
+        <label for="search-filters1">Library pages</label>
+        <input id="search-filters2" name="sitesearch" type="radio" value="cornell" />
+        <label for="search-filters2">Cornell</label>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- The header div contains the main identity and main navigation for the site -->
+<div id="header">
+	<!-- 	  
+ 		The navigation div contains the site's main navigation. These
+  		links will be displayed in a horizontal, gray navigation bar
+		under the unit signature banner.
+  -->
+	<div id="navigation">
+					<ul><li class=" first"><a href="/index" title="Home Page">Home</a></li>
+<li><a href="/aboutus" title="Top of the page link to About Us">About Us</a></li>
+<li><a href="/services/email.html" title="">Libraries</a></li>
+<li><a href="/libraryhours" title="Hours and Maps">Hours and Maps</a></li>
+<li><a href="http://www.library.cornell.edu/culhelp" title="">Help</a></li>
+<li><a href="http://www.library.cornell.edu/myacct" title="">My Account</a></li>
+<li><a href="/services/askalib.html" title="">Ask a Librarian</a></li>
+</ul>  		  	   
+	</div>
+	<hr class="hidden" />
+</div>
+<hr class="hidden" />
+<div id="wrap">
+	<!-- The content div contains the main content of the page -->
+	<div id="content">
+		<div id="main">
+			<div class="masthead">
+            
+				<div class="banner" id="banner-image">
+                						<div id="research-menu">
+                        
+
+
+<div>
+
+  <div class="content">
+    <ul>
+<li><a href="/accessiblesearch" class="thickbox" id="thickbox" title="Search">Search</a></li>
+</ul>
+  </div>
+</div>
+
+
+
+<div>
+
+  <div class="content">
+    <ul><li class=" first"><a href="/course" title="">Course Help</a></li>
+<li><a href="/resrch" title="">Research Help</a></li>
+<li><a href="/svcs" title="">Library Services</a></li>
+<li><a href="/request" title="">Requests</a></li>
+</ul>   </div>
+</div>
+                    </div>
+                    					<h1><span>Collections</span></h1>
+				</div>
+			</div>
+            
+            
+            
+            
+									
+			
+			<div class="breadcrumb"><a href="/">Home</a> > <a href="/aboutus" title="About Us">About Us</a> > <a href="/aboutus/collections" title="Collections">Collections</a> > <a href="/aboutus/collections/strength" title="Collection Strengths">Collections Overview</a></div>			
+            <h1 id="title">Cornell University Library Selectors</h1>            
+            
+			<!-- content goes here -->
+			<a href="#maincontent"></a>
+            						<div class="help"><p></p>
+<p></p>
+</div>			<div id="node-35" class="node">
+
+
+
+
+  <div class="content">
+    <p>The Library's physical and digital collections are administered by a  team of librarian subject specialists -- also called selectors or bibliographers  -- who make  purchase decisions in consultation with Cornell scholars.</p>
+<p><center><br /></center><center style="text-align: right;"> </center></p>
+<table style="height: 10210px;" cellpadding="4" cellspacing="2" width="100%" border="1">
+<tbody>
+<tr>
+<td valign="top">
+<h2><b><span style="text-decoration: underline;"><span>Area</span></span></b></h2>
+</td>
+<td valign="top">
+<h2><b><span style="text-decoration: underline;"><span>Selector</span></span></b></h2>
+</td>
+<td valign="top">
+<h2><b><span style="text-decoration: underline;"><span>Phone</span></span></b></h2>
+</td>
+<td valign="top">
+<h2><b><span style="text-decoration: underline;"><span>E-Mail</span></span></b></h2>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Accounting</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/display/individual25390"><span>Susan Kendrick</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6949</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:sfk23@cornell.edu"><span>sfk23@cornell.edu</span></a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>African Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23855"><span>Eric Kofi Acree</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5229</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ea18@cornell.edu"><span>ea18@cornell.edu</span></a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>African-American Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23855"><span>Eric Kofi Acree</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5229</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ea18@cornell.edu"><span>ea18@cornell.edu</span></a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Agriculture (International)</span></h3>
+</td>
+<td valign="top">
+<p><span><br /></span> pending</p>
+</td>
+<td valign="top"></td>
+<td valign="top"></td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>American History</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23436"><span>Peter Hirtle</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-4033</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:pbh6@cornell.edu">pbh6@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>American Indian History</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual24311"><span>Maureen Morris</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-7455</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:mm342@cornell.edu">mm342@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>American Literature &amp; Film</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual21925"><span>Fred Muratori</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6662</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:fmm1@cornell.edu"><span>fmm1@cornell.edu</span></a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Ancient History</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual31444"><span>Kizer Walker</span></a></p>
+</td>
+<td valign="top">
+<p><span>254-1375</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:kw33@cornell.edu"><span>kw33@cornell.edu</span></a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Animal Science</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650">Linda Stewart</a> (Mann)</span></p>
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual21905">Susanne Whitaker</a> (Vet)</span></p>
+</td>
+<td valign="top">
+<p><span>255-9022</span></p>
+<p><span>253-3499</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></span></p>
+<p><span><a href="mailto:skw2@cornell.edu"><span>skw2@cornell.edu</span></a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Anthropology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual24311"><span>Maureen Morris</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-7455</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:mm342@cornell.edu"><span>mm342@cornell.edu</span></a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Applied Economics  (Mann)</span></h3>
+</td>
+<td valign="top">
+<p><span><br />pending</span></p>
+</td>
+<td valign="top">
+<p><span><br /></span></p>
+</td>
+<td valign="top">
+<p><a href="mailto:jat264@cornell.edu"><span></span></a></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Archaeology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual31444"><span>Kizer Walker</span></a></p>
+</td>
+<td valign="top">
+<p><span>254-1375</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:kw33@cornell.edu"><span>kw33@cornell.edu</span></a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Architecture</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23141"><span>Martha Walker</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6719</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:maw6@cornell.edu">maw6@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Art</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23948"><span>Susette Newberry</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3927</span></p>
+</td>
+<td valign="top">
+<p><a href="mailto:sn18@cornell.edu"><span>sn18@cornell.edu</span></a></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Asia (General)</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/NashLorena">Lorena Nash</a></span></p>
+</td>
+<td valign="top">
+<p><span>255-4189</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ld286@cornell.edu">ld286@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Asia Reference (General)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/AtkinsonCarole"><span>Carole Atkinson</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-8199</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:cea1@cornell.edu">cea1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Asian Americans</span></h3>
+</td>
+<td valign="top">
+<p><span>See: </span><span style="text-decoration: underline;"><span>American Literature, <br /> East Asian Studies,<br /> South Asian Studies,<br /> Southeast Asian Studies</span></span></p>
+</td>
+<td valign="top"></td>
+<td valign="top"></td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Astronomy</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/DianneDietrich"><span>Dianne Dietrich</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-4016</span></p>
+</td>
+<td valign="top">
+<p><a href="mailto:dd388@cornell.edu">dd388@cornell.edu<br /></a></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Australian/New Zealand </span><span>Literature &amp; Film</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual21925"><span>Fred Muratori</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6662</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:fmm1@cornell.edu">fmm1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Bibliography/History of the Book</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23436"><span>Peter Hirtle</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-4033</span></p>
+</td>
+<td valign="top">
+<p><a href="mailto:pbh6@cornell.edu"><span>pbh6@cornell.edu</span></a></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Biochemistry</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu"><span>gwl1@cornell.edu</span></a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Biological &amp; Environmental Engineering</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Biological Statistics &amp; Computational Biology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl11@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Biometry</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>British History (modern &amp; medieval)</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23523">Virginia Cole</a></span></p>
+</td>
+<td valign="top">
+<p><span>255-5359</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:vac11@cornell.edu">vac11@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Business (JGSM)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/display/individual25390"><span>Susan Kendrick</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6949</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:sfk23@cornell.edu">sfk23@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Business (Hospitality Industry)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/display/individual23536"><span>Ken Bolton</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-4103</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ktb4@cornell.edu">ktb4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Business (Mann Library)</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/TurnerJaron">Jaron Porciello</a><br /></span></p>
+</td>
+<td valign="top">
+<p><span>255-9903</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:jat254@cornell.edu">jat264@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Canadian Literature &amp; Film</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual21925"><span>Fred Muratori</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6662</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:fmm1@cornell.edu">fmm1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Chemistry</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual26"><span>Leah Solla</span></a></p>
+</td>
+<td valign="top">
+<p><span>793-6217</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lrm1@cornell.edu">lrm1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Children's Literature</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23094"><span>Lance Heidig</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-2954</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ljh5@cornell.edu">ljh5@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Chinese Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/ZhengLiren"><span>Liren Zheng</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5759</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lz14@cornell.edu">lz14@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Christianity</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/display/individual22636"><span>Patrick Stevens</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3530</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:pjs3@cornell.edu">pjs3@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>City and Regional Planning</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23141"><span>Martha Walker</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6719</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:maw6@cornell.edu">maw6@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Classics</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual31444"><span>Kizer Walker</span></a></p>
+</td>
+<td valign="top">
+<p><span>254-1375</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:kw33@cornell.edu">kw33@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Commonwealth History</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23523"><span>Virginia Cole</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5359</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:vac11@cornell.edu">vac11@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Communication</span></h3>
+</td>
+<td>
+<p>pending</p>
+</td>
+<td valign="top">
+<p><span> </span></p>
+</td>
+<td valign="top">
+<p><span><br /></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Comparative Literature</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual21925"><span>Fred Muratori</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6662</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:fmm1@cornell.edu">fmm1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Computer Science, Technology &amp; Networking</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual30712">Jill Powell</a></p>
+</td>
+<td valign="top">
+<p>255-8701</p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:jhp1@cornell.edu">jhp1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Cornell University  (Archives)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual21990"><span>Elaine Engst</span></a></p>
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23266"><span>Eileen Keating</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3530</span></p>
+<p><span>255-3530</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ee11@cornell.edu">ee11@cornell.edu</a></span></p>
+<p><span><a href="mailto:eek2@cornell.edu">eek2@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Criminology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/display/individual22911"><span>Nancy Skipper</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5176</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:nss3@cornell.edu">nss3@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Crop and Soil Sciences</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Dance</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual25359"><span>Bonna Boettcher </span></a></p>
+</td>
+<td valign="top">
+<p><span>255-7126</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:bjb57@cornell.edu">bjb57@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Design &amp; Environmental Analysis</span></h3>
+</td>
+<td valign="top"><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart</span></a></td>
+<td valign="top">
+<p><span>255-9022<br /></span></p>
+</td>
+<td valign="top"><span></span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Earth &amp; Atmospheric Sciences</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9022</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>East Asian Studies</span></h3>
+</td>
+<td valign="top&quot;">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/ZhengLiren"><span>Liren Zheng </span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5759</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lz14@cornell.edu">lz14@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Ecology &amp; Evolutionary Biology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9022</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Economics</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22044">Deb Schmidle</a> (Olin)</span></p>
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/display/individual25390">Susan Kendrick</a> (JGSM)</span></p>
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual23481">Suzanne Cohen</a> (ILR)</span></p>
+</td>
+<td valign="top">
+<p><span>255-3680</span></p>
+<p></p>
+<p><span>255-6949</span></p>
+<p></p>
+<p><span>255-7105</span></p>
+</td>
+<td valign="top">
+<p><span> <a href="mailto:dj13@cornell.edu">dj13@cornell.edu</a></span></p>
+<p></p>
+<p><span><a href="mailto:sfk23@cornell.edu">sfk23@cornell.edu</a></span></p>
+<p></p>
+<p><span><a href="mailto:sac29@cornell.edu">sac29@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Economics -- Europe</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22236"><span>Sarah How</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9478</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:seh4@cornell.edu">seh4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Education</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart</span></a><span> (Mann)<br /> </span></p>
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22218">Tony Cosgrave</a> (Olin)</p>
+</td>
+<td valign="top">
+<p><span>255-9022<br /></span></p>
+<p>255-7148</p>
+</td>
+<td valign="top">
+<p><span></span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></p>
+<p><span><a href="mailto:ajc5@cornell.edu">ajc5@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Engineering</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual30712">Jill Powell</a><br /></span></p>
+</td>
+<td valign="top">
+<p><span>255-8701</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:jhp1@cornell.edu">jhp1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>English Language, Literature &amp; Film</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual21925"><span>Fred Muratori</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6662</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:fmm1@cornell.edu">fmm1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Entomology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9022</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Environmental Engineering</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual30712">Jill Powell</a></p>
+</td>
+<td valign="top">
+<p>255-8701</p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:jhp1@cornell.edu">jhp1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Fiber Science &amp; Apparel</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9022</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Finance</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/display/individual25390"><span>Susan Kendrick</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6949</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:sfk23@cornell.edu">sfk23@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Folklore </span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual21925"><span>Fred Muratori</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6662</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:fmm1@cornell.edu">fmm1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Food Science</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9022</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>French History  (modern &amp;  medieval)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22236"><span>Sarah How</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9478</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:seh4@cornell.edu">seh4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>French Language &amp; Literature</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22236"><span>Sarah How</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9478</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:seh4@cornell.edu">seh4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Genealogy</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23436"><span>Peter Hirtle</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-4033</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:pbh6@cornell.edu">pbh6@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Geneva Experiment Station</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual471"><span>Marty Schlabach</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6919</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:mls5@cornell.edu">mls5@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Geography</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23045">Boris Michev</a></span></p>
+</td>
+<td valign="top">
+<p><span>255-9566</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:bm19@cornell.edu">bm19@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Geological Sciences</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/JeremyCusker"><span>Jeremy Cusker<br /></span></a></p>
+</td>
+<td valign="top">
+<p><span>254-6261</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:jpc27@cornell.edu">jpc27@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>German History (modern &amp;  medieval)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual31444"><span>Kizer Walker</span></a></p>
+</td>
+<td valign="top">
+<p><span>254-1375</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:kw33@cornell.edu">kw33@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>German Language &amp; Literature</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual31444"><span>Kizer Walker</span></a></p>
+</td>
+<td valign="top">
+<p><span>254-1375</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:kw33@cornell.edu">kw33@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Government</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22338"><span>Lynn Thitchener</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-4985 </span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lmk7@cornell.edu">lmk7@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Government - Europe</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22236"><span>Sarah How</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9478</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:seh4@cornell.edu">seh4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Government Documents</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22338">Lynn Thitchener</a> (Olin)</span></p>
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523">Greg Lawrence</a> (Mann)</span></p>
+</td>
+<td valign="top">
+<p><span>255-4985</span></p>
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ahk3@cornell.edu">lmk7@cornell.edu</a></span></p>
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Greek History and Literature (modern &amp;  medieval)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22236"><span>Sarah How</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9478</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:seh4@cornell.edu">seh4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Health Administration</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/TurnerJaron">Jaron Porciello</a><br /></span></p>
+</td>
+<td valign="top">
+<p><span>255-9903</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:jat264@cornell.edu">jat264@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>History (General)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23436"><span>Peter Hirtle</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-4033</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:pbh6@cornell.edu">pbh6@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>History of Science (Olin)<br /></span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual26"><span>Leah Solla</span></a></p>
+</td>
+<td valign="top">
+<p><span>793-6217</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lrm1@cornell.edu">lrm1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>History of Science (Rare &amp; Manuscript)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23079"><span>David Corson</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5477</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:dwc4@cornell.edu">dwc4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Horticulture</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Hospitality Industry</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/display/individual23536"><span>Ken Bolton</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-4103</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ktb4@cornell.edu">ktb4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Human Development &amp;  Family Studies</span></h3>
+</td>
+<td valign="top"><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart</span></a></td>
+<td valign="top">
+<p><span>255-9022<br /></span></p>
+</td>
+<td valign="top"><span></span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Human Sexuality</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22767"><span>Brenda Marston</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3530</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:bjm4@cornell.edu">bjm4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Icelandic Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22636"><span>Patrick Stevens</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3530</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:pjs3@cornell.edu">pjs3@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Industrial Relations</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual23481"><span>Suzanne Cohen</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-7105</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:sac29@cornell.edu">sac29@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Information Science</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual30712">Jill Powell</a></p>
+</td>
+<td valign="top">
+<p>255-8701</p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:jhp1@cornell.edu">jhp1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Information Technology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual30712">Jill Powell</a></p>
+</td>
+<td valign="top">
+<p>255-8701</p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:jhp1@cornell.edu">jhp1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Irish History (modern &amp; medieval)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/display/individual23523"><span>Virginia Cole<br /></span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5359</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:vac11@cornell.edu">vac11@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Irish Literature &amp; Film</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual21925"><span>Fred Muratori</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6662</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:fmm1@cornell.edu">fmm1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Islam</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22719"><span>Ali Houissa</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5752</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ah16@cornell.edu">ah16@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Italian History (modern &amp;  medieval)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22236"><span>Sarah How</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9478</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:seh4@cornell.edu">seh4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Italian Language &amp; Literature</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22236"><span>Sarah How</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9478</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:seh4@cornell.edu">seh4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Japanese Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/DanielMckee"><span>Daniel McKee</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-4737</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:djm53@cornell.edu">djm53@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Jewish Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22636"><span>Patrick Stevens</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3530</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:pjs3@cornell.edu">pjs3@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Korean Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/ZhengLiren"><span></span></a><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/ZhengLiren">Liren Zheng</a></p>
+</td>
+<td valign="top">
+<p><span>255-5759</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lz14@cornell.edu">lz14@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Labor</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual23481"><span>Suzanne Cohen</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-7105</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:sac29@cornell.edu">sac29@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Landscape Architecture</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523">Greg Lawrence</a> (Mann)</span></p>
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23141">Martha Walker</a> (Fine Arts)</span></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+<p><span>255-6719</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+<p><span><a href="mailto:maw6@cornell.edu">maw6@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Language Pedagogy</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual14308"><span>Kornelia Tancheva</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3774</span></p>
+</td>
+<td valign="top">
+<p><a href="mailto:kt18@cornell.edu">kt18@cornell.edu</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Latin American Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://library.columbia.edu/content/libraryweb/indiv/area/latam/staff.html"><span>Sean Knowlton</span></a></p>
+</td>
+<td valign="top">
+<p><span>(212) 854-1679</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:spk57@cornell.edu">spk57@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Latino Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual21904"><span>Cecilia Sercan</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5752</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:css4@cornell.edu">css4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Law</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/display/individual24815"><span>Thomas Mills</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5859</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:twm26@cornell.edu">twm26@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Library Science</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual25293">Wendy Wilcox</a><br /></span></p>
+</td>
+<td valign="top">
+<p><span>254-6241</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ww83@cornell.edu">ww83@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Linguistics</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual14308">Kornelia Tancheva</a></span></p>
+</td>
+<td valign="top">
+<p><span>255-3774</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:kt18@cornell.edu">kt18@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Management</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/display/individual25390"><span>Susan Kendrick</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6949</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:sfk23@cornell.edu">sfk23@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Maps</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual23045">Boris Michev</a></span></p>
+</td>
+<td valign="top">
+<p><span>255-9566</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:bm19@cornell.edu">bm19@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Marketing</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/display/individual25390"><span>Susan Kendrick</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6949</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:sfk23@cornell.edu">sfk23@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Mathematical Statistics</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual23132"><span>Steven Rockey</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5268</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:swr1@cornell.edu">swr1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Mathematics</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual23132"><span>Steven Rockey</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5268</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:swr1@cornell.edu">swr1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Medieval Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23523"><span>Virginia Cole</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5359</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:vac11@cornell.edu">vac11@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Microbiology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Middle East and Islam</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22719"><span>Ali Houissa</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5752</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ah16@cornell.edu">ah16@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Molecular Biology and Genetics</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Music</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual25359"><span>Bonna Boettcher</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-7126</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:bjb57@cornell.edu">bjb57@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Music and Dance Videos &amp; Sound Recordings</span></h3>
+</td>
+<td valign="top">
+<p><span>Tracey Snyder<br /></span></p>
+</td>
+<td valign="top">
+<p><span>255-6160<br /></span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:"></a></span></p>
+<p><a href="mailto:tls224@cornell.edu">tls224@cornell.edu</a></p></td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Natural Resources</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9022</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Naval History </span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23436"><span>Peter Hirtle</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-4033</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:pbh6@cornell.edu">pbh6@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Netherlandic Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22636"><span>Patrick Stevens</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3530</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:pjs3@cornell.edu">pjs3@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Neurobiology &amp; Behavior</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart<br /></span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9022</span></p>
+</td>
+<td valign="top">
+<p><a href="mailto:nch9@cornell.edu"><span></span></a><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Newspapers, North American</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22712">Michael Engle</a></span></p>
+</td>
+<td valign="top">
+<p><span>255-1884</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:moe1@cornell.edu">moe1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Numismatics</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual31444"><span>Kizer Walker</span></a></p>
+</td>
+<td valign="top">
+<p><span>254-1375</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:kw33@cornell.edu">kw33@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Nutrition</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9022</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Operations Research</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual30712">Jill Powell</a></p>
+</td>
+<td valign="top">
+<p>255-8701</p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:jhp1@cornell.edu">jhp1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Organizational Behavior</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual23481">Suzanne Cohen</a> (ILR)</span></p>
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/display/individual25390">Susan Kendrick</a> (JGSM/Hotel)</span></p>
+</td>
+<td valign="top">
+<p><span>255-7105</span></p>
+<p><span>255-6949</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:sac29@cornell.edu">sac29@cornell.edu</a></span></p>
+<p><span><a href="mailto:sfk23@cornell.edu">sfk23@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Ornithology<br /></span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650">Linda Stewart</a> (Mann)</span></p>
+</td>
+<td valign="top">
+<p><span>255-9022</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Peace Studies</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22338">Lynn Thitchener</a><br /></span></p>
+</td>
+<td valign="top">
+<p><span>255-4985</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lmk7@cornell.edu">lmk7@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Personnel/Human Resource Management</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual23481">Suzanne Cohen</a> (ILR)</span></p>
+</td>
+<td valign="top">
+<p><span>255-7105</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:sac29@cornell.edu">sac29@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Philately</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual21904"><span>Cecilia Sercan</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5752</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:css4@cornell.edu">css4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Philosophy</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/BoazNadavManes">Boaz Nadav-Manes</a><br /></span></p>
+</td>
+<td valign="top">
+<p>255-5762</p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:btn3@cornell.edu">btn3@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Physics</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/DianneDietrich">Dianne Dietrich</a><br /></span></p>
+</td>
+<td valign="top">
+<p><span>255-4016</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:dd388@cornell.edu">dd388@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Physiology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22650"><span>Linda Stewart</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9022</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:lgs1@cornell.edu">lgs1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Plant Biology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Plant Breeding</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Plant Pathology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Policy Analysis &amp; Management</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/TurnerJaron">Jaron Porciello</a></span></p>
+</td>
+<td valign="top">
+<p><span>255-9903</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:bb75@cornell.edu">bb75@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Portuguese History</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual21904"><span>Cecilia Sercan</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5752</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:css4@cornell.edu">css4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Portuguese Language &amp; Literature</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual21904"><span>Cecilia Sercan</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-5752</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:css4@cornell.edu">css4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Post-Soviet Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="https://blogs.cul.columbia.edu/spotlights/2010/02/16/librarian-highlight-rob-davis/"><span>Robert Davis</span></a></p>
+</td>
+<td valign="top">
+<p><span>(212) 854-4701</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:rhd2106@columbia.edu">rhd2106@columbia.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Psychology</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22218">Tony Cosgrave</a></span></p>
+</td>
+<td valign="top">
+<p><span>255-7148</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ajc5@cornell.edu">ajc5@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Rare Books</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22632"><span>Katherine Reagan</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3530</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:kr33@cornell.edu">kr33@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Reference Collection, Olin/Uris</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22712"><span>Michael Engle</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-1884</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:moe1@cornell.edu">moe1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Religious Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual31444"><span>Kizer Walker</span></a></p>
+</td>
+<td valign="top">
+<p><span>254-1375</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:kw33@cornell.edu">kw33@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="187">
+<h3><span>Restaurant/Food Service</span></h3>
+</td>
+<td valign="top" width="214">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/display/individual23536"><span>Ken Bolton</span></a></p>
+</td>
+<td valign="top" width="153">
+<p><span>255-4103</span></p>
+</td>
+<td valign="top" width="145">
+<p><span><a href="mailto:ktb4@cornell.edu">ktb4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Rural/Development Sociology</span></h3>
+</td>
+<td valign="top">pending</td>
+<td valign="top">
+<p><span><br /></span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:nch9@cornell.edu"><br /></a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Scandinavian Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22636"><span>Patrick Stevens</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3530</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:pjs3@cornell.edu">pjs3@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Slavic Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="https://blogs.cul.columbia.edu/spotlights/2010/02/16/librarian-highlight-rob-davis/"><span>Robert Davis</span></a></p>
+</td>
+<td valign="top">
+<p><span>(212) 854-4701</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:rhd2106@columbia.edu">rhd2106@columbia.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Social Science Data Files</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://ciser.cornell.edu/"><span>CISER</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-1986</span></p>
+</td>
+<td valign="top">
+<p><a href="mailto:CISER@cornell.edu">CISER@cornell.edu</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Social Sciences (General)</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual25293_1">Kaila Bussert</a><br /></span></p>
+</td>
+<td valign="top">
+<p><span>254-6216</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:kjb82@cornell.edu">kjb82@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Sociology</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual22911">Nancy Skipper</a> (Olin)</span></p>
+<p><span><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual23481">Suzanne Cohen</a> (ILR)</span></p>
+</td>
+<td valign="top">
+<p><span>255-5176 </span></p>
+<p><span>255-7105</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:nss3@cornell.edu">nss3@cornell.edu</a></span></p>
+<p><span><a href="mailto:sac29@cornell.edu">sac29@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Sociology -- Europe</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22236"><span>Sarah How</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9478</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:seh4@cornell.edu">seh4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>South Asian Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual25434"><span></span></a><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual25434">Bronwen Bledsoe</a></p>
+</td>
+<td valign="top">
+<p><span>255-9479</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:bb246@cornell.edu">bb246@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Southeast Asian Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual25524"><span>Gregory H. Green</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-8889</span></p>
+</td>
+<td valign="top">
+<p><a href="mailto:ghg4@cornell.edu">ghg4@cornell.edu</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Theater and Drama (General)</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual21925"><span>Fred Muratori</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-6662</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:fmm1@cornell.edu">fmm1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Toxicology</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual20523"><span>Greg Lawrence</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3242</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:gwl1@cornell.edu">gwl1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Travel/Tourism</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/display/individual23536"><span>Ken Bolton</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-4103</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:ktb4@cornell.edu">ktb4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Urban Studies</span></h3>
+</td>
+<td valign="top">
+<p><span><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual23045">Boris Michev</a><br /></span></p>
+</td>
+<td valign="top">
+<p><span>255-9566</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:bm19@cornell.edu">bm19@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Urban Studies – Europe</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22236"><span>Sarah How</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9478</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:seh4@cornell.edu">seh4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Veterinary Medicine</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual21905"><span>Susanne Whitaker</span></a></p>
+</td>
+<td valign="top">
+<p><span>253-3499</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:skw2@cornell.edu">skw2@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Water Resources</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.library.cornell.edu/individual/vivo/individual30712">Jill Powell</a></p>
+</td>
+<td valign="top">
+<p>255-8701</p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:jhp1@cornell.edu">jhp1@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Women's Studies</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22767"><span>Brenda Marston</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-3530</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:bjm4@cornell.edu">bjm4@cornell.edu</a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h3><span>Women's Studies - Europe</span></h3>
+</td>
+<td valign="top">
+<p><a target="_blank" href="http://vivo.cornell.edu/humanities/individual/vivo/individual22236"><span>Sarah How</span></a></p>
+</td>
+<td valign="top">
+<p><span>255-9478</span></p>
+</td>
+<td valign="top">
+<p><span><a href="mailto:seh4@cornell.edu">seh4@cornell.edu</a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span>last revised, 7/26/12, fm<br /> Send changes to <a href="mailto:fmm1@cornell.edu">Fred Muratori</a></span> </p>
+  </div>
+
+</div> 
+            
+	
+			</div><!-- #main -->
+	
+		
+		
+				</div>
+</div>
+<hr class="hidden" />
+<div id="footer">
+  <div id="footer-content"> <div><a href="/fdbkform?url=http://www.library.cornell.edu/aboutus/coll/strength/select">Send Us Feedback</a> | <a href="http://cuinfo.cornell.edu/">CU Info</a> | <a href="http://www.cornell.edu/">CU Homepage</a> | <a href="copyrightstatement">&copy;2012</a> <a href="http://www.cornell.edu/">Cornell University</a> | <a href="privacy">Privacy</a> |
+<a href="http://www.library.cornell.edu/accessiblesearch">Text-only Search Box</a> |
+        <a href="/user?destination=node%2F35">Staff Login</a>
+      </div>
+  <div>Cornell University Library, Ithaca NY 14853|607-255-4144</div>
+  </div>
+  </div>
+
+
+
+<script type="text/javascript" src="/sites/all/modules/google_cse/google_cse.js?X"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "googleCSE": { "language": "en" } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-8097093-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = "/sites/default/files/googleanalytics/ga.js?X";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>
