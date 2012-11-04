@@ -9,6 +9,7 @@ class Page:
         self.anchor_texts = [] # also contains alt text of <img>'s within <a></a>
         self.rank = 0.0
         self.snippet = ' '.join(html.split()[:10])
+        self.a = []
     
     # Public: creates a hash based on the HTML.
     #
