@@ -1,3 +1,5 @@
+import numpy
+
 class PageRankr:
     def __init__(self, d=0.85, size=(0,0)):
         self.__d = d
