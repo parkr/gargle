@@ -67,6 +67,8 @@ class Parser:
         print len(self.pages)
         return None
         print "Skipped page(s) %s because of an error." % (', '.join(skipped))
+    
+    def write_metadata(self):
         # write metadata.xml
         doc = Document()
         doc.appendChild(doc.createElement("date").appendChild(doc.createTextNode(datetime.now().isoformat())))
