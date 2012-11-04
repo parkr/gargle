@@ -17,7 +17,6 @@ class Parser:
         try:
             f = open("%s/%s.html" % (self.backup_pages_dir_rel_path, num), 'r')
         except IOError:
-            return None
             try:
                 f = open("%s/%s.htm" % (self.backup_pages_dir_rel_path, num), 'r')
                 encoding = "iso-8859-1"
@@ -28,7 +27,6 @@ class Parser:
         try:
             unicode_html = unicode(html, 'utf-8')
         except UnicodeDecodeError:
-            unicode_html = unicode(html, 'windows-1252')
             if encoding:
                 unicode_html = unicode(html, encoding)
             else:
@@ -56,7 +54,7 @@ class Parser:
                 continue
             
             soup = BeautifulSoup(html.encode('utf-8', 'ignore'), "lxml")
-            page = Page(title=soup.title.string, html=soup.prettify(), soup=soup)
+            page = Page(title=soup.title.string, html=soup.prettify())
             self.pages_with_ids[page.ID] = page
             
             for link in soup.find_all('a'):
@@ -64,7 +62,6 @@ class Parser:
             
             self.pages.append(page)
         print len(self.pages)
-        return None
         print "Skipped page(s) %s because of an error." % (', '.join(skipped))
     
     def write_metadata(self):
