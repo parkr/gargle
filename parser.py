@@ -13,10 +13,16 @@ class Parser:
         self.backup_pages_dir_rel_path = "./test3"
         
     def __get_html(self, num, url):
+        encoding = False
         try:
             f = open("%s/%s.html" % (self.backup_pages_dir_rel_path, num), 'r')
         except IOError:
             return None
+            try:
+                f = open("%s/%s.htm" % (self.backup_pages_dir_rel_path, num), 'r')
+                encoding = "iso-8859-1"
+            except IOError:
+                return None
         
         html = f.read()
         try:
