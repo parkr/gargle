@@ -47,3 +47,4 @@ class Searchr:
         result_rank = 1
         for (rank, page) in sorted(results, key=itemgetter(0)):
             print "%d. %s" % (result_rank, page.search_output())
+            result_rank += 1
