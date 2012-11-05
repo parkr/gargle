@@ -2,7 +2,7 @@
 
 import argparse
 from searchr import Searchr
-from parser import Parser
+from brain import Brain
 from page import Page
 
 if __name__ == "__main__":
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     else:
         user_defined_query = None
         
-    parser = Parser()
-    parser.parse_urls(user_defined_url_doc)
-    parser.process_pages()
-    parser.calc_page_ranks()
+    brain = Brain()
+    brain.parse_urls(user_defined_url_doc)
+    brain.process_pages()
+    brain.calc_page_ranks()

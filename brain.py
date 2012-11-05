@@ -5,7 +5,7 @@ from page import Page
 from progressbar import *
 import urllib2, helpers, numpy
 
-class Parser:
+class Brain:
     
     def __init__(self):
         self.S = []
