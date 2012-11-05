@@ -4,11 +4,18 @@ from brain import Brain
 
 class Searchr:
     
+    # Public: Initializes a new instance of Searchr and sets up instance variables
+    #
+    # brain - an instance of Brain which contains pages with caluclated PageRank values
+    #
+    # Returns nothing
     def __init__(self, brain=Brain()):
         self.brain = brain
         self.anchor_text_with_ranks_with_pages = {}
     
     # Public: Create index based on the ranks in the brain
+    #
+    # Returns nothing
     def build_index(self):
         pbar = ProgressBar(widgets=['Processing pages: ', SimpleProgress()], maxval=len(self.brain.pages_with_ids.keys())).start()
         index = 1
@@ -23,6 +30,11 @@ class Searchr:
             index += 1
         pbar.finish()
     
+    # Public: Process query string and print output
+    #
+    # query - a string containing a query
+    #
+    # Returns nothing
     def process_query(self, query):
         results = []
         already_collected = []
@@ -32,5 +44,6 @@ class Searchr:
                     if pages[1].ID not in already_collected:
                         results.append(pages)
                         already_collected.append(pages[1].ID)
+        result_rank = 1
         for (rank, page) in sorted(results, key=itemgetter(0)):
-            print page.search_output()
+            print "%d. %s" % (result_rank, page.search_output())
