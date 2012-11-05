@@ -7,7 +7,7 @@ import urllib2, helpers, numpy
 
 class Brain:
     
-    # Public: Initializes a new instance of brain and sets up instance variables
+    # Public: Initializes a new instance of Brain and sets up instance variables
     #
     # Returns nothing
     def __init__(self):
@@ -118,7 +118,7 @@ class Brain:
         progress = 1
         for (ID, page) in self.pages_with_ids.iteritems():
             pbar.update(progress)
-            page.rank = self.ranks[page.index][page.index]
+            page.rank = self.ranks[page.index]
             progress += 1
         pbar.finish()
         numpy.savetxt("page_ranks.txt", self.ranks)
