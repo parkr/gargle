@@ -38,12 +38,14 @@ class Searchr:
     def process_query(self, query):
         results = []
         already_collected = []
+        query_terms = query.split(' ')
         for anchor_text in self.anchor_text_with_ranks_with_pages.keys():
-            if query in anchor_text:
-                for pages in self.anchor_text_with_ranks_with_pages[anchor_text]:
-                    if pages[1].ID not in already_collected:
-                        results.append(pages)
-                        already_collected.append(pages[1].ID)
+            for term in query_terms:
+                if term in anchor_text:
+                    for pages in self.anchor_text_with_ranks_with_pages[anchor_text]:
+                        if pages[1].ID not in already_collected:
+                            results.append(pages)
+                            already_collected.append(pages[1].ID)
         result_rank = 1
         for (rank, page) in sorted(results, key=itemgetter(0)):
             print "%d. %s" % (result_rank, page.search_output())
