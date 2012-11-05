@@ -1,22 +1,25 @@
-import hashlib, StringIO, codecs
+import urllib, urlparse, helpers
 from xml.dom.minidom import Document
 
 class Page:
-    def __init__(self, title, num, html):
-        self.ID = self.id_hash(html)
+    def __init__(self, title, num, html, url):
+        self.ID = helpers.page_hash(html)
         self.num = num
         self.title = title
-        self.urls = []
+        self.urls = [url]
         self.anchor_texts = [] # also contains alt text of <img>'s within <a></a>
+        self.inlinks = 0.0
         self.rank = 0.0
         self.snippet = ' '.join(html.split()[:10])
         self.a = []
+        self.index = 0
     
-    # Public: creates a hash based on the HTML.
-    #
-    # Returns the md5 hash of the HTML
-    def id_hash(self, html):
-        return hashlib.md5(html.encode(errors='ignore')).hexdigest()
+    def normalize_url(self, href, charset='utf-8'):
+        # ensure that it's properly encoded
+        if isinstance(href, unicode):
+            href = href.encode(charset, 'ignore')
+        # make absolute, relative to current page URL        
+        return urlparse.urljoin(self.urls[0], href)
     
     # Public: creates an xml representation of the page
     #
