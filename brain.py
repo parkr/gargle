@@ -97,20 +97,25 @@ class Brain:
         for (ID, page) in self.pages_with_ids.iteritems():
             pbar.update(progress)
             for k in xrange(len(self.adj[page.index])):
-                if col_sums[k] > 0:
+                if col_sums[page.index] != 0:
                     self.adj[page.index][k] = self.adj[page.index][k] / col_sums[page.index]
                 else:
                     self.adj[page.index][k] = 0.0
                 self.indices_with_pages[k]
             progress += 1  
         pbar.finish()
+        numpy.savetxt("adj.txt", self.adj)
         # Run PageRank and converge to principal eigenvector of adj matrix
         self.ranks = numpy.ones(len(self.pages_with_ids.keys()))
         z = numpy.ones(len(self.pages_with_ids.keys()))
+        b = 1.0 - d
         pbar = ProgressBar(widgets=['Running PageRank: ', SimpleProgress()], maxval=1000).start()
         for m in xrange(1000):
             pbar.update(m)
-            self.ranks = numpy.dot(d, numpy.dot(self.adj, self.ranks)) + numpy.dot((1-d), z)
+            u = numpy.dot(self.adj, self.ranks)
+            e = d*u
+            f = b*z
+            self.ranks = e+f
         pbar.finish()
         print self.ranks
         # Updating ranks of the pages
