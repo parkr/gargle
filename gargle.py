@@ -33,7 +33,26 @@ if __name__ == "__main__":
     brain.parse_urls(user_defined_url_doc)
     brain.process_pages()
     brain.calc_page_ranks()
+    brain.write_metadata()
     
     searchr = Searchr(brain)
     searchr.build_index()
-    searchr.process_query('help')
+    if user_defined_query == None:
+        # read in queries and output results from LSI
+        try:
+            query = raw_input('Enter a query: ')
+        except KeyboardInterrupt:
+            query = ""
+        while query != "":
+            try:
+                # process query
+                print "Showing results for '%s':" % query
+                print searchr.process_query(query)
+                # get new query
+                query = raw_input('Enter a query: ')
+            except KeyboardInterrupt:
+                query = ""
+    else:
+        # process based on input query
+        print "Showing results for '%s':" % user_defined_query
+        print searchr.process_query(user_defined_query)
