@@ -1,9 +1,8 @@
 from bs4 import BeautifulSoup
 from xml.dom.minidom import Document
-from datetime import datetime
 from page import Page
 from progressbar import *
-import urllib2, helpers, numpy
+import urllib2, helpers, numpy, datetime
 
 class Brain:
     
@@ -117,7 +116,6 @@ class Brain:
             f = b*z
             self.ranks = e+f
         pbar.finish()
-        print self.ranks
         # Updating ranks of the pages
         pbar = ProgressBar(widgets=['Updating pages with new ranks: ', SimpleProgress()], maxval=len(self.pages_with_ids.keys())).start()
         progress = 1
@@ -134,8 +132,15 @@ class Brain:
     def write_metadata(self):
         # write metadata.xml
         doc = Document()
-        doc.appendChild(doc.createElement("date").appendChild(doc.createTextNode(datetime.now().isoformat())))
+        # input the date
+        datex = doc.createElement("date")
+        date = doc.createTextNode(datetime.datetime.now().isoformat())
+        datex.appendChild(date)
+        doc.appendChild(datex)
+        # add pages
         pagesx = doc.createElement("pages")
         doc.appendChild(pagesx)
-        for p in self.pages:
+        for (ID, p) in self.pages_with_ids.iteritems():
             pagesx.appendChild(p.metadata(doc))
+        with open('metadata.xml', 'w') as f:
+            f.write(doc.toprettyxml(indent='  '))
