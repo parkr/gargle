@@ -7,14 +7,25 @@ import urllib2, helpers, numpy
 
 class Brain:
     
+    # Public: Initializes a new instance of brain and sets up instance variables
+    #
+    # Returns nothing
     def __init__(self):
         self.S = []
         self.urls = []
         self.pages = []
         self.pages_with_ids = {}
         self.urls_with_nums = {}
+        self.indices_with_pages = {}
+        self.adj = None
         self.ranks = None
     
+    # Public: reads in the URLs from the file
+    #
+    # filename - the filename of the file with the newline-delimited
+    #            (num,url) comma-separated values
+    #
+    # Returns nothing
     def parse_urls(self, filename='./test/test3.txt'):
         # reads in URLs & normalizes
         f = open(filename, 'r')
@@ -23,6 +34,9 @@ class Brain:
             self.urls.append( (els[0], els[1]) )
             self.S.append(els[1])
     
+    # Public: Grabs the HTML and creates the instances of Page for each URL
+    #
+    # Returns nothing
     def process_pages(self):
         skipped = []
         pbar = ProgressBar(widgets=['Processing pages: ', SimpleProgress()], maxval=len(self.urls)).start()
@@ -35,8 +49,9 @@ class Brain:
                 if html is not None:
                     self.urls_with_nums[url] = num
                     soup = BeautifulSoup(html.encode('utf-8', 'ignore'), 'lxml')
-                    page = Page(title=soup.title.string, num=num, html=soup.prettify(), url=url)
+                    page = Page(title=soup.title.string, num=num, html=soup.prettify(), url=url, text=soup.body.get_text())
                     page.index = i
+                    self.indices_with_pages[i] = page
                     if page.ID not in self.pages_with_ids.keys():
                         self.pages_with_ids[page.ID] = page
                     else:
@@ -53,12 +68,13 @@ class Brain:
         pbar.finish()
         print "Skipped page(s) %s because of an error." % (', '.join(skipped))
     
+    # Public: Calculates the PageRank value for all the pages
+    #
+    # Returns nothing
     def calc_page_ranks(self, d=0.85):
-        # re-create self.__m
-        self.ranks = numpy.zeros( (len(self.pages_with_ids),len(self.pages_with_ids)) )
+        self.adj = numpy.zeros( (len(self.pages_with_ids),len(self.pages_with_ids)) )
         pbar = ProgressBar(widgets=['Processing links: ', SimpleProgress()], maxval=len(self.pages_with_ids.keys())).start()
         progress = 1
-        
         for (ID, page) in self.pages_with_ids.iteritems():
             pbar.update(progress)
             # magic PageRank
@@ -72,26 +88,44 @@ class Brain:
                     if ID in self.pages_with_ids.keys():
                         #print "%s (#%d) cites %s (#%d)" % (page.num, page.index, self.pages_with_ids[ID].num, self.pages_with_ids[ID].index)
                         #print self.urls[int(self.pages_with_ids[ID].num)-1]
-                        self.ranks[page.index][self.pages_with_ids[ID].index] = 1.0
-                #print a.get_text()
+                        self.adj[page.index][self.pages_with_ids[ID].index] = 1.0
             progress += 1
         # Normalize adjacency matrix into PageRanks
-        pbar = ProgressBar(widgets=['Normalizing PageRanks: ', SimpleProgress()], maxval=len(self.pages_with_ids.keys())).start()
+        pbar = ProgressBar(widgets=['Normalizing adjacencies: ', SimpleProgress()], maxval=len(self.pages_with_ids.keys())).start()
         progress = 1
-        col_sums = numpy.sum(self.ranks, axis=1)
-        print col_sums
+        col_sums = numpy.sum(self.adj, axis=1)
         for (ID, page) in self.pages_with_ids.iteritems():
             pbar.update(progress)
-            for k in xrange(len(self.ranks[page.index])):
+            for k in xrange(len(self.adj[page.index])):
                 if col_sums[k] > 0:
-                    self.ranks[page.index][k] = self.ranks[page.index][k] / col_sums[page.index]
+                    self.adj[page.index][k] = self.adj[page.index][k] / col_sums[page.index]
                 else:
-                    self.ranks[page.index][k] = 0.0
+                    self.adj[page.index][k] = 0.0
+                self.indices_with_pages[k]
+            progress += 1  
+        pbar.finish()
+        # Run PageRank and converge to principal eigenvector of adj matrix
+        self.ranks = numpy.ones(len(self.pages_with_ids.keys()))
+        z = numpy.ones(len(self.pages_with_ids.keys()))
+        pbar = ProgressBar(widgets=['Running PageRank: ', SimpleProgress()], maxval=1000).start()
+        for m in xrange(1000):
+            pbar.update(m)
+            self.ranks = numpy.dot(d, numpy.dot(self.adj, self.ranks)) + numpy.dot((1-d), z)
+        pbar.finish()
+        print self.ranks
+        # Updating ranks of the pages
+        pbar = ProgressBar(widgets=['Updating pages with new ranks: ', SimpleProgress()], maxval=len(self.pages_with_ids.keys())).start()
+        progress = 1
+        for (ID, page) in self.pages_with_ids.iteritems():
+            pbar.update(progress)
+            page.rank = self.ranks[page.index][page.index]
             progress += 1
-            
         pbar.finish()
         numpy.savetxt("page_ranks.txt", self.ranks)
     
+    # Public: Writes the page metadata to metadata.xml
+    #
+    # Returns nothing
     def write_metadata(self):
         # write metadata.xml
         doc = Document()
