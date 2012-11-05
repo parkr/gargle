@@ -47,6 +47,6 @@ class Searchr:
                             results.append(pages)
                             already_collected.append(pages[1].ID)
         result_rank = 1
-        for (rank, page) in sorted(results, key=itemgetter(0)):
+        for (rank, page) in sorted(results, key=itemgetter(0), reverse=True):
             print "%d. %s" % (result_rank, page.search_output())
             result_rank += 1
