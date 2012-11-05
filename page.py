@@ -33,7 +33,7 @@ class Page:
         
         # add page rank
         pagerankx = xmldoc.createElement("pagerank")
-        pagerankx.appendChild(xmldoc.createTextNode(self.rank))
+        pagerankx.appendChild(xmldoc.createTextNode(str(self.rank)))
         p.appendChild(pagerankx)
         
         # add anchor texts
