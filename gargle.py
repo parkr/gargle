@@ -4,7 +4,6 @@ import argparse
 from searchr import Searchr
 from parser import Parser
 from page import Page
-from page_rankr import PageRankr
 
 if __name__ == "__main__":
     # consider command-line options
@@ -34,7 +33,4 @@ if __name__ == "__main__":
     parser = Parser()
     parser.parse_urls(user_defined_url_doc)
     parser.process_pages()
-    
-    pr = PageRankr()
-    pr.pages = parser.pages_with_ids
-    pr.calc_page_ranks()
+    parser.calc_page_ranks()
