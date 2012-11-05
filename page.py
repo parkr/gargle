@@ -2,7 +2,7 @@ import urllib, urlparse, helpers
 from xml.dom.minidom import Document
 
 class Page:
-    def __init__(self, title, num, html, url):
+    def __init__(self, title, num, html, url, text):
         self.ID = helpers.page_hash(html)
         self.num = num
         self.title = title
@@ -10,7 +10,7 @@ class Page:
         self.anchor_texts = [] # also contains alt text of <img>'s within <a></a>
         self.inlinks = 0.0
         self.rank = 0.0
-        self.snippet = ' '.join(html.split()[:10])
+        self.snippet = ' '.join(text.split()[:10])
         self.a = []
         self.index = 0
     
