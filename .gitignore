@@ -1,3 +1,5 @@
 .DS_Store
 *.pyc
 page_ranks.txt
+
+adj.txt
