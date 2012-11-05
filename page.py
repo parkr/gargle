@@ -10,7 +10,7 @@ class Page:
         self.anchor_texts = [] # also contains alt text of <img>'s within <a></a>
         self.inlinks = 0.0
         self.rank = 0.0
-        self.snippet = ' '.join(text.split()[:10])
+        self.snippet = ' '.join(text.split(' ')[20:40])
         self.a = []
         self.index = 0
     
@@ -47,4 +47,4 @@ class Page:
         return p
     
     def search_output(self):
-        return "%s: %f\n%s" % (self.title, self.rank, self.snippet)
+        return "%s: %f\n\t%s" % (self.title, self.rank, self.snippet)
