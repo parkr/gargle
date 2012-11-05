@@ -10,7 +10,7 @@ class Page:
         self.anchor_texts = [] # also contains alt text of <img>'s within <a></a>
         self.inlinks = 0.0
         self.rank = 0.0
-        self.snippet = ' '.join(text.split(' ')[20:40])
+        self.snippet = ' '.join(text.split(' ')[100:110])
         self.a = []
         self.index = 0
     
