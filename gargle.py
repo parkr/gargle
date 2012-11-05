@@ -3,7 +3,6 @@
 import argparse
 from searchr import Searchr
 from brain import Brain
-from page import Page
 
 if __name__ == "__main__":
     # consider command-line options
@@ -34,3 +33,7 @@ if __name__ == "__main__":
     brain.parse_urls(user_defined_url_doc)
     brain.process_pages()
     brain.calc_page_ranks()
+    
+    searchr = Searchr(brain)
+    searchr.build_index()
+    searchr.process_query('help')
